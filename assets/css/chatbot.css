@@ -1,0 +1,524 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+.main-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.content-box {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.content-box .text {
+    width: 50%;
+}
+
+.content-box .text h2{
+   font-size: 48px;
+   margin-bottom: 10px;
+}
+
+.content-box .text h3{
+    font-size: 26px;
+    font-weight: 200;
+    line-height: 39px;
+    margin-top: 15px;
+}
+
+.content-box .text h6{
+   font-size: 16px;
+   font-weight: 200;
+   text-decoration: none;
+}
+
+.content-box .text h6 a{
+    text-decoration: none;
+    color: #4092FB;
+} 
+.content-box .text .themeButton{
+   border-radius: 35px;
+   background: #4092FB;
+   padding: 18px 30px;
+   width: 230px;
+   display: block;
+   text-align: center;
+   text-decoration: none;
+   color: #fff;
+   font-size: 20px;
+   font-weight: 100;
+}
+
+.content-box .text .themeButton:hover{
+   background: #2a74d4;
+  
+}
+
+.content-box .text {
+        padding-right: 30px;
+        width: 50%;
+}
+
+.content-box .text select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url(arrow.png);
+    background-repeat: no-repeat;
+    background-position-x: 88%;
+    background-position-y: 23px;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+    margin-right: 2rem;
+    padding: 1.2rem;
+    padding-right: 2rem;
+    width: 200px;
+    font-size: 16px;
+    margin: 20px 0;
+    color: #636363;
+}
+
+
+.content-box .image {
+    width: 50%;
+}
+
+.content-box .image img {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 768px){
+
+.main-wrapper {
+    height: auto;
+}
+
+
+.content-box {
+    width: 100%;
+    flex-direction: column;
+}
+
+
+.content-box .text {
+    padding-right: 36px;
+    width: 100%;
+    padding: 40px;
+    display: block;
+    box-sizing: border-box;
+}
+
+
+.content-box .image {
+    width: 80%;
+    padding: 35px;
+    display: block;
+    box-sizing: border-box;
+    padding-top: 0;
+}
+
+.content-box .text h6 {
+	    font-size: 20px;
+	    font-weight: 200;
+	    text-decoration: none;
+	}
+
+	.loginPop .modal-content {
+	    background-color: #fefefe;
+	    margin: auto;
+	    padding: 25px !important;
+	    border: 1px solid #888;
+	    width: 100%;
+	    border-radius: 10px;
+	    box-sizing: border-box;
+	}
+
+
+	.loginPop .close {
+	    color: #aaaaaa;
+	    float: right;
+	    font-size: 28px;
+	    font-weight: bold;
+	    top: 0;
+	    position: relative;
+	    right: -8px;
+	}
+
+	.loginBox {
+	   
+	    flex-direction: column;
+	}
+
+	.loginBox .loginEmail {
+	    width: 100% !important;
+	}
+
+	.loginBox .loginGoogle {
+	    width: 100% !important;
+	}
+
+	.loginPop .head {
+	    font-size: 21px !important;
+	}
+
+	.loginBox .loginEmail input[type="submit"] {
+	   padding: 15px !important;
+	    border: 0;
+	    border-radius: 30px;
+	    font-size: 18px;
+	}
+
+	.loginBox .loginGoogle {
+	    width: 100% !important;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center !important;
+	    margin-top: 20px;
+	}
+
+	.loginBox .loginGoogle a img {
+	    margin-right: 30px;
+	    width: 39px !important;
+	}
+
+	.loginBox .loginGoogle a {
+
+	    font-size: 16px !important;
+
+	}
+}
+
+@media screen and (max-width: 576px){
+	.content-box .text {
+	    padding-right: 14px;
+	    width: 100%;
+	    padding: 14px;
+	    display: block;
+	    box-sizing: border-box;
+	}
+
+	.content-box .text h2 {
+	    font-size: 30px;
+	    margin-bottom: 0;
+	}
+
+	.content-box .text h3 {
+	    font-size: 18px;
+	    font-weight: 200;
+	    line-height: inherit;
+	    margin-top: 8px;
+	}
+
+	.content-box .text .themeButton {
+	   
+	    padding: 15px 30px;
+	    width: 180px;
+	    display: block;
+	    font-size: 16px;
+	}
+
+	.content-box .text h6 {
+        font-size: 15px;
+	    font-weight: 200;
+	    text-decoration: none;
+	    margin: 15px 0;
+	}
+
+	.content-box .image {
+	    width: 100%;
+	    padding: 20px;
+	    display: block;
+	    box-sizing: border-box;
+	    padding-top: 0;
+	}
+
+
+}
+
+
+.content-box .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.content-box .switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.content-box .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.content-box .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.content-box input:checked + .slider {
+  background-color: #4192fa;
+}
+
+.content-box input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+.content-box input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.content-box .slider.round {
+  border-radius: 34px;
+}
+
+.content-box .slider.round:before {
+  border-radius: 50%;
+}
+
+.content-box .text p{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.content-box .text p .switch{
+	    margin-left: 20px;
+}
+
+
+/* The Modal (background) */
+.loginPop.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.loginPop .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 44px;
+  border: 1px solid #888;
+  width: 70%;
+  width: 700px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* The Close Button */
+.loginPop .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  top: -30px;
+  position: relative;
+  right: -17px;
+}
+
+.loginPop .close:hover,
+.loginPop .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.loginPop .head {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+.loginPop .foot{text-align: center;display: flex;align-items: center;justify-content: center;color: #479c33;padding: 15px;}
+
+.loginPop .foot img{
+	margin-right: 8px;
+}
+
+.loginBox{display: flex;align-items: center;margin: 25px 0;}
+
+
+.loginBox .loginEmail{
+	width:100%;
+}
+
+
+.loginBox .loginEmail .formField{
+	position: relative;
+}
+
+
+.loginBox .loginEmail .formField input[type="text"]{
+	width: 100%;
+	padding: 12px 0px;
+	font-size: 16px;
+	border: 0;
+	border-bottom: 1px solid #595656;
+	box-sizing: border-box;
+}
+
+.loginBox .loginEmail .formField input[type="email"]{
+	width: 100%;
+	padding: 27px 0px;
+	font-size: 16px;
+	border: 0;
+	border-bottom: 1px solid #595656;
+	box-sizing: border-box;
+}
+
+.loginBox .loginEmail .formField input[type="password"]{
+	width: 100%;
+	padding: 12px 0px;
+	font-size: 16px;
+	border: 0;
+	border-bottom: 1px solid #595656;
+	box-sizing: border-box;
+}
+
+
+.loginBox .loginEmail  input[type="submit"]{
+	width: 100%;
+	background: #4092FB;
+	padding: 18px;
+	border: 0;
+	border-radius: 30px;
+	font-size: 21px;
+	color: #fefefe;
+	margin: 40px 0;
+}
+
+.loginBox .loginEmail  input[type="submit"]:hover{
+	
+	background: #2a74d4;
+}
+
+.loginBox .loginEmail  p{
+	margin-bottom: 8px !important;
+	margin: 0;
+	font-weight: 200;
+}
+
+.loginBox .loginEmail  p a{
+	color: #4192fa;
+	text-decoration: none;
+}
+
+
+.loginBox .loginGoogle{
+	width: 45%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.loginBox .loginGoogle a{
+	display: flex;
+	align-items: center;
+	background: #4285F4;
+	padding: 5px;
+	padding-right: 52px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 19px;
+	border-radius: 5px;
+}
+
+.loginBox .loginGoogle a img{
+	margin-right: 30px;
+	width: 60px;
+}
+
+
+.loginBox .loginEmail:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: #919191;
+    top: 0;
+    right: -39px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.or{
+	position: absolute;
+    top: 50%;
+    right: -59px;
+    z-index: 1;
+    transform: translate(-10px, -50%);
+    background: #fefefe;
+    font-size: 22px;
+    font-weight: 100;
+    color: #919191;
+}
+
+.error{
+	color:red;
+}
+
+.chatbotempty {
+    color: red;
+}
+.not-active {
+ pointer-events: none;
+ cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
